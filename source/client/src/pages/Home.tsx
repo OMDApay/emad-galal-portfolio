@@ -151,7 +151,7 @@ const copy = {
     projectsBody: "مواقع وأدوات رقمية ومشروعات تعليمية وإبداعية متاحة للزيارة، مع توضيح غرض كل عمل بصورة مختصرة ومهنية.",
     inventionsKicker: "07 — اختراعات وهندسة",
     inventionsTitle: "حين تصبح الملاحظة بداية اختراع.",
-    inventionsBody: "تظهر براءة الاختراع وفق ما يثبته المستند المرفق فقط، دون توسيع الادعاء القانوني. وتظهر رياضة «بلاطات» الآن كملف موثق بشعار وقانون ووثيقة رسمية مرفقة.",
+    inventionsBody: "براءة اختراع أصلية رقم 20093 صادرة من وزارة البحث العلمي والتكنولوجيا المصرية. وتظهر رياضة «بلاطات» الآن كملف موثق بشعار وقانون ووثيقة رسمية مرفقة.",
     publicationsKicker: "08 — منشورات",
     achievementsKicker: "09 — إنجازات",
     resumesKicker: "10 — ملفات مهنية",
@@ -218,7 +218,7 @@ const copy = {
     projectsBody: "Websites, digital tools, educational work, and creative projects available to visit, with each project framed by a concise professional purpose.",
     inventionsKicker: "07 — Inventions & engineering",
     inventionsTitle: "When observation becomes the beginning of an invention.",
-    inventionsBody: "The patent is presented only within what the supplied extract proves, without expanding a legal claim. “Balatat” now appears as a documented file with a supplied emblem, rules, and official document.",
+    inventionsBody: "Original patent no. 20093, issued by Egypt’s Ministry of Scientific Research and Technology. “Balatat” now appears as a documented file with a supplied emblem, rules, and official document.",
     publicationsKicker: "08 — Publications",
     achievementsKicker: "09 — Achievements",
     resumesKicker: "10 — Professional files",
@@ -419,7 +419,7 @@ export default function Home() {
           <div className="proof-lead reveal"><span className="stamp"><img src={assets.mark} alt="" /></span><div><p className="eyebrow">{t.proof}</p><p>{t.proofBody}</p></div></div>
           <div className="proof-stat reveal reveal-delay-1"><strong>29</strong><span>{isArabic ? "عاماً من القيادة" : "years driving"}</span></div>
           <div className="proof-stat reveal reveal-delay-2"><strong>05</strong><span>{isArabic ? "سنوات في السفارة الأمريكية بمصر" : "years at the U.S. Embassy in Egypt"}</span></div>
-          <div className="proof-stat reveal reveal-delay-3"><strong>20093</strong><span>{isArabic ? "رقم براءة في المستخرج" : "patent number in extract"}</span></div>
+          <div className="proof-stat reveal reveal-delay-3"><strong>20093</strong><span>{isArabic ? "براءة اختراع أصلية — وزارة البحث العلمي والتكنولوجيا المصرية" : "original patent — Egypt’s Ministry of Scientific Research and Technology"}</span></div>
         </div>
       </section>
 
@@ -485,7 +485,7 @@ export default function Home() {
       <section id="inventions" className="paper-section invention-section">
         <div className="container">
           <SectionIntro kicker={t.inventionsKicker} title={t.inventionsTitle} body={t.inventionsBody} number="07" />
-          <div className="invention-layout"><div className="patent-card reveal"><div className="patent-card-head"><span>OFFICIAL EXTRACT</span><span className="dossier-stamp"><img src={assets.mark} alt="" /> NO. 20093</span></div><div className="patent-image"><img src={assets.patent} alt={isArabic ? "مستخرج رسمي لوثيقة براءة الاختراع رقم 20093" : "Official extract showing patent no. 20093"} loading="lazy" /></div><div className="patent-card-foot"><span>{isArabic ? "Heat Regulation / 1992" : "Heat Regulation / 1992"}</span><span><FileCheck2 size={14} /> {isArabic ? "وثيقة مرفقة" : "Supplied document"}</span></div></div><div className="invention-notes reveal reveal-delay-2"><article><div className="note-symbol"><Tractor size={19} /></div><p className="eyebrow">01 / {isArabic ? "خلفية" : "Background"}</p><h3>{isArabic ? "هندسة زراعية بعين عملية." : "Agricultural engineering, practically minded."}</h3><p>{isArabic ? "الخلفية الهندسية جزء من فهم المشكلة قبل البحث عن طريقة قابلة للتطبيق." : "An engineering background starts with understanding the problem before looking for a workable method."}</p></article><article><div className="note-symbol"><Route size={19} /></div><p className="eyebrow">02 / BLAAT</p><h3>{isArabic ? "مؤسس ومبتكر رياضة «بلاطات»." : "Founder / Creator of the “Blaat” sport."}</h3><p>{isArabic ? "تظهر هنا كفكرة إبداعية وقصة تطوير، بينما تنتظر القواعد الرسمية والملف التفصيلي الإضافة." : "Presented as a creative concept and development story, awaiting its official rules and detailed file."}</p></article></div></div>
+          <div className="invention-layout"><div className="patent-card reveal"><div className="patent-card-head"><span>ORIGINAL PATENT</span><span className="dossier-stamp"><img src={assets.mark} alt="" /> NO. 20093</span></div><div className="patent-image"><img src={assets.patent} alt={isArabic ? "براءة اختراع أصلية رقم 20093" : "Original patent no. 20093"} loading="lazy" /></div><div className="patent-card-foot"><span>{isArabic ? "Heat Regulation / 1992" : "Heat Regulation / 1992"}</span><span><FileCheck2 size={14} /> {isArabic ? "براءة أصلية" : "Original patent"}</span></div></div><div className="invention-notes reveal reveal-delay-2"><article><div className="note-symbol"><Tractor size={19} /></div><p className="eyebrow">01 / {isArabic ? "خلفية" : "Background"}</p><h3>{isArabic ? "هندسة زراعية بعين عملية." : "Agricultural engineering, practically minded."}</h3><p>{isArabic ? "الخلفية الهندسية جزء من فهم المشكلة قبل البحث عن طريقة قابلة للتطبيق." : "An engineering background starts with understanding the problem before looking for a workable method."}</p></article><article><div className="note-symbol"><Route size={19} /></div><p className="eyebrow">02 / BLAAT</p><h3>{isArabic ? "مؤسس ومبتكر رياضة «بلاطات»." : "Founder / Creator of the “Blaat” sport."}</h3><p>{isArabic ? "تظهر هنا كفكرة إبداعية وقصة تطوير، بينما تنتظر القواعد الرسمية والملف التفصيلي الإضافة." : "Presented as a creative concept and development story, awaiting its official rules and detailed file."}</p></article></div></div>
         </div>
       </section>
 

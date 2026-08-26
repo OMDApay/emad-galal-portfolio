@@ -681,7 +681,20 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--copper); outlin
     grid-row: auto;
     width: 100%;
     min-height: 0;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
+    background: var(--paper);
+  }
+  .project-card.has-project-image .project-thumb img {
+    object-fit: contain;
+    object-position: center !important;
+  }
+  .project-card.has-project-image .project-thumb span {
+    inset: auto 10px 10px auto;
+    padding: 5px 8px;
+    color: var(--paper-light);
+    background: rgba(9,18,31,.82);
+    font-size: 9px;
+    letter-spacing: .04em;
   }
   .project-card.has-project-image .project-main,
   .project-card.has-project-image .project-bottom {
